@@ -30,6 +30,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
       padding: const EdgeInsets.all(16),
       child: Scaffold(
          //   backgroundColor:  Color(0xFF1F1F1F),
+      // FutureBuilder(
+        //  future: UserProvider.instance.getAllUsers(),
+       //   builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+        //    if(snapshot.hasData){
+         //     print(snapshot.data.last.username);
+
         body:SingleChildScrollView(
           scrollDirection: Axis.vertical,
           physics: ClampingScrollPhysics(),
@@ -57,7 +63,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         padding: const EdgeInsets.only(top: 50,),
                         child: Column(
                           children: [
-                            Text("Yomna Ashraf",style: TextStyle(fontSize: 20),),
+                            Text("",style: TextStyle(fontSize: 20),),
                             Text("${widget.userEmail}"),
                           ],
                         ),
